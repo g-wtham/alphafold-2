@@ -2402,6 +2402,7 @@ function ImpactCard({ item }) {
   );
 }
 
+
 // ─── MAIN APP ─────────────────────────────────────────────────────────────────
 export default function App() {
   const [active, setActive] = useState("hero");
@@ -2429,6 +2430,7 @@ export default function App() {
         section { scroll-margin-top: 52px; }
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
       `}</style>
+     
       <NavBar active={active} />
       <div style={{ paddingTop: 52 }}>
         <HeroSection />
@@ -2439,7 +2441,16 @@ export default function App() {
         <HowItWorksSection />
         <AF3Section />
         <ImpactSection />
+            <footer style={{
+      textAlign:"center",
+      padding:"40px 20px",
+      color:"#666",
+      fontSize:"14px"
+    }}>
+      Made By Gowtham M - {new Date().getFullYear()} 
+    </footer>
       </div>
     </div>
+    
   );
 }
